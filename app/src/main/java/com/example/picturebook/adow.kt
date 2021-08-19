@@ -12,7 +12,7 @@ class adow : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_deks)
             R.layout.activity_adow
-        startActivity(intent)
+
                     castView ()
                     onClick ()
 
@@ -23,7 +23,7 @@ class adow : AppCompatActivity() {
     }
     fun onClick(){
         btnd.setOnClickListener {
-            var intent=Intent(baseContext,deks::class.java)
+            val intent=Intent(baseContext,deks::class.java)
             startActivity(intent)
         }
 

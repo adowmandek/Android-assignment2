@@ -10,12 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        startActivity(intent)
         castView()
         onClick()
     }
     fun castView(){
-        btna=findViewById(R.id.btnd)
+        btna=findViewById(R.id.btna)
 
     }
     fun onClick(){

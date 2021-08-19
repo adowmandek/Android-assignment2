@@ -11,7 +11,7 @@ class kednam : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kednam)
-        startActivity(intent)
+
         castView()
         onClick()
     }
@@ -23,7 +23,7 @@ class kednam : AppCompatActivity() {
     }
     fun onClick(){
         btnnum4.setOnClickListener {
-            var intent= Intent(baseContext,deks::class.java)
+            val intent= Intent(baseContext,deks::class.java)
             startActivity(intent)
         }
 }}

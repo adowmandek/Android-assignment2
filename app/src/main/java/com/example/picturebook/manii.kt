@@ -6,21 +6,20 @@ import android.os.Bundle
 import android.widget.Button
 
 class manii : AppCompatActivity() {
-    lateinit var btnz:Button
-//    lateinit var btnum2:Button
+    lateinit var btno:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manii)
         castView()
         onClick()
-        startActivity(intent)
+
     }
     fun castView(){
 
-        btnz=findViewById(R.id.btnz)
+        btno=findViewById(R.id.btno)
     }
     fun onClick(){
-        btnz.setOnClickListener {
+        btno.setOnClickListener {
             var intent= Intent(baseContext,adow::class.java)
             startActivity(intent)
         }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F44336"
     tools:context=".adow">
 
     <androidx.constraintlayout.widget.Guideline
@@ -12,16 +13,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="409dp"
-        app:layout_constraintGuide_percent="0.5"/>
+        app:layout_constraintGuide_percent="0.5" />
 
     <TextView
         android:id="@+id/tvk"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="24dp"
-        android:text="The book describes tips of becoming a good leader.Is one of the best books in African continent.Most schools are introduced to train students to be good leader in future"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Building Stories is a 2012 graphic novel by American cartoonist Chris Ware. The unconventional work is made up of fourteen printed works—cloth-bound books, newspapers, broadsheets and flip books—packaged in a boxed set. The work took a decade to complete, and was published by Pantheon Books."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,20 +35,34 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="187dp"
+        android:backgroundTint="#000000"
         android:text="BACK"
         app:layout_constraintEnd_toStartOf="@+id/btnd"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvk"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvk" />
 
     <Button
         android:id="@+id/btnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FD000000"
         android:text="NEXT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvk" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/building" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

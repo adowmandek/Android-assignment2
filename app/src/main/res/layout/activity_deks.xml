@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#673AB7"
     tools:context=".deks">
 
     <ImageView
@@ -24,14 +25,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="368dp"
-        app:layout_constraintGuide_percent="0.5"/>
+        app:layout_constraintGuide_percent="0.5" />
 
     <TextView
         android:id="@+id/tvdek"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="TextView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="You can no longer add music from the Audio Library to YouTube Stories. We’re removing this feature because of low usage, and so we can focus on improving the Stories experience."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +44,9 @@
         android:id="@+id/btnb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#000000"
         android:text="NEXT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvdek" />
@@ -51,11 +55,12 @@
         android:id="@+id/btnnum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#000000"
         android:rotationY="360"
         android:text="BACK"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvdek"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvdek" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
